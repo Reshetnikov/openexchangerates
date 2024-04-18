@@ -26,6 +26,11 @@ $config = [
             ],
         ],
         'db' => $db,
+        'exchangeRate' => [
+            'class' => 'app\components\ExchangeRateComponent',
+            'apiKey' => env('API_KEY'),
+            'apiUrl' => env('API_URL'),
+        ],
     ],
     'params' => $params,
     /*
